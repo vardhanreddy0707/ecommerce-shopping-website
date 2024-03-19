@@ -1,0 +1,11 @@
+<body bgcolor="aqua">
+
+    <h1 style="color:red; margin-top: 80px; "><u><i>Signup....</i></h1>
+           <form method="POST">
+               {% csrf_token %}
+               {{ form.as_p}}
+               <button type="submit" style="color:red;">Signup</button>
+               <a style="color:blue;" href="{% url 'login' %}">Already have Account?</a>
+               
+           </form>
+   </body>
